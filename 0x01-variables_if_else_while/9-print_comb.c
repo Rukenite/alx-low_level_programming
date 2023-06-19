@@ -4,12 +4,12 @@
 
 /**
  * main - Entry execution
- * Return: 0 Always (successful)
- */ 
+ * Return: 0 Always (successful)*/ 
 
 int main(void)
 {
 	int d;
+
 	for (d = '0'; d <= '9'; d++)
 	{
 	putchar(d);
@@ -20,5 +20,5 @@ int main(void)
 	}
 	}
 	putchar('\n');
-	return (0);	
+	return (0);
 }
