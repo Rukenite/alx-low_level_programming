@@ -1,29 +1,27 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 
 /**
- * main - Entry execution
- * Return: Always 0 (successful)
+ * main - Entry point
+ *
+ * Return: Exit status is 0 (if success)
  */
-
 int main(void)
 {
-	int d, p;
-	for (d = '0'; d <= '9'; d++)
+	int i;
+	int j;
+
+	for (i = 48; i < 57; i++)
 	{
-	for (p = 'd' + 1; p <= '9'; p++)
+	for (j = i + 1; j <= 57; j++)
 	{
-	if (p != d)
-	{
-	putchar(d);
-	putchar(p);
-	if (p =='8' && '9')
-	continue;
-	putchar(',');
-	putchar(' ');
+	putchar(i);
+	putchar(j);
+	if (j == 57 && i == 56)
+	break;
+	putchar(44);
+	putchar(32);
 	}
 	}
-	}
+	putchar('\n');
 	return (0);
 }
