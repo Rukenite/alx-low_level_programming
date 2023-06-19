@@ -4,7 +4,8 @@
 
 /**
  * main - Entry execution
- * Return: 0 Always (successful)*/ 
+ * Return: 0 Always (successful)
+ * / 
 
 int main(void)
 {
