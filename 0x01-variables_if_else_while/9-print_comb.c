@@ -3,23 +3,23 @@
 #include <time.h>
 
 /**
- * main - Entry execution
- * Return: 0 Always (successful)
- */ 
-
+ * main - Prints all decimal digits
+ * without using printf
+ * Return: Exit status is zero means success
+ */
 int main(void)
 {
-	int d;
+	int i;
 
-	for (d = '0'; d <= '9'; d++)
+	for (i = 48; i <= 57; i++)
 	{
-	putchar(d);
-	if (d != '9')
-	{
-	putchar(',');
-	putchar(' ');
-	}
+		putchar(i);
+		if (i == 57)
+		break;
+		putchar(',');
+		putchar(' ');
 	}
 	putchar('\n');
+
 	return (0);
 }
