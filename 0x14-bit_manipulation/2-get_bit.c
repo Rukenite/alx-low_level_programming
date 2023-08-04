@@ -17,5 +17,5 @@ int get_bit(unsigned long int n, unsigned int index)
 
 	drawer = n >> index;
 
-	return (hold & 1);
+	return (drawer & 1);
 }
